@@ -27,7 +27,16 @@ Every `secretprovider.Config` with `ServiceAccountToken` set then builds a servi
 
 ## A Scriptling CLI with service accounts
 
-The released `scriptling` CLI supports 1Password Connect only. To build one with service accounts, make a module with this `main.go`:
+Scriptling releases include two CLI builds with this extension compiled in:
+
+```sh
+brew install paularlott/tap/scriptling-onepassword        # with the database plugins
+brew install paularlott/tap/scriptling-slim-onepassword   # without them
+```
+
+The zips (`scriptling-onepassword-<os>-<arch>.zip`, `scriptling-slim-onepassword-<os>-<arch>.zip`) are on the [Scriptling releases page](https://github.com/paularlott/scriptling/releases). The standard `scriptling` and `scriptling-slim` builds support 1Password Connect only.
+
+To build your own instead, make a module with this `main.go`:
 
 ```go
 package main

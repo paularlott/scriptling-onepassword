@@ -2,13 +2,9 @@ module github.com/paularlott/scriptling-onepassword
 
 go 1.27.2
 
-// Until scriptling v0.30.4 (which adds the service account registration
-// hook) is tagged.
-replace github.com/paularlott/scriptling => ../scriptling
-
 require (
 	github.com/1password/onepassword-sdk-go v0.4.1
-	github.com/paularlott/scriptling v0.30.3
+	github.com/paularlott/scriptling v0.30.4
 )
 
 require (
