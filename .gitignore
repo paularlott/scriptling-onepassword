@@ -1,0 +1,8 @@
+.DS_Store
+/.codegraph/
+/.task/
+/bin/
+/.claude/settings.local.json
+
+# ZCode session directory
+.zcode/
